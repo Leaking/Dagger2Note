@@ -3,6 +3,7 @@
     package="com.quinn.dagger2note">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,10 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".lesson1.chapter1.UserActivity"></activity>
+        <activity android:name=".lesson1.chapter1.UserActivity" />
         <activity android:name=".lesson1.chapter2.UserActivity" />
-        <activity android:name=".lesson2.chapter1.HttpActivity"></activity>
-        <activity android:name=".lesson2.chapter2.WarActivity">
+        <activity android:name=".lesson2.chapter1.HttpActivity" />
+        <activity android:name=".lesson2.chapter2.WarActivity"></activity>
+        <activity android:name=".lesson2.chapter3.SingletonEntryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
