@@ -1,5 +1,8 @@
 package com.quinn.dagger2note.lesson1;
 
+// 无module
+
+
 //一，编码
 
 //首先，我们约定，A是一个类，b是A的一个成员变量，b的类型是B
@@ -21,7 +24,26 @@ package com.quinn.dagger2note.lesson1;
 
 
 
+
 //三，疑问 Q & A
 //Q1; 重命名很麻烦?
 //A1; 会有点麻烦，生成的代码会随着工程代码重命名而重命名，但是像Daggerxxxxxx.java这些生成的类，类名无法跟随着改
 
+// module
+
+//除了可以用inject变量的方式注入，还可以用module + provide的方式注入（前者只能用于自定义类，而后者在此基础上用于第三方的类）
+
+
+//module里的方法可以是静态的也可以是非静态的，生成的代码，会做出相应处理的
+//module里的方法，返回类型只能是void或者某个支持注入的类型，
+//  如果是返回void类型的方法，需要至少传入至少一个参数（0个参数会编译不过，多个参数还待验证），dagger会尝试去帮这个参数的所有成员变量做注入
+//  如果是返回某个类型的方法，则需要这个类型支持注入
+
+//@Module优先级别高于@Inject。
+
+
+//    //Members injection methods may only return the injected type or void.
+
+//import dagger.Provides;error: okhttp3.OkHttpClient is bound multiple times:
+//@Provides okhttp3.OkHttpClient com.quinn.dagger2note.lesson2.chapter1.HttpActivityModule.provideOkHttpClient()
+//@Provides okhttp3.OkHttpClient com.quinn.dagger2note.lesson2.chapter1.HttpActivityModule.provideFakeOne()

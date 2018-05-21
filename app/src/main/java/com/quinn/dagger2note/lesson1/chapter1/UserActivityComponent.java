@@ -7,4 +7,5 @@ public interface UserActivityComponent {
 
     void inject (UserActivity factoryActivity);
 
+    Folder get();
 }
