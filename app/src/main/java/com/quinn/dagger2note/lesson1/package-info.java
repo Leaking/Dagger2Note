@@ -47,3 +47,9 @@ package com.quinn.dagger2note.lesson1;
 //import dagger.Provides;error: okhttp3.OkHttpClient is bound multiple times:
 //@Provides okhttp3.OkHttpClient com.quinn.dagger2note.lesson2.chapter1.HttpActivityModule.provideOkHttpClient()
 //@Provides okhttp3.OkHttpClient com.quinn.dagger2note.lesson2.chapter1.HttpActivityModule.provideFakeOne()
+
+
+//component的继承关系，生成的代码，都是用来局部内部类访问外部类依赖的方式
+
+
+

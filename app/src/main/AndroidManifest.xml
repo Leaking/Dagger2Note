@@ -14,8 +14,12 @@
         <activity android:name=".lesson1.chapter1.UserActivity" />
         <activity android:name=".lesson1.chapter2.UserActivity" />
         <activity android:name=".lesson2.chapter1.HttpActivity" />
-        <activity android:name=".lesson2.chapter2.WarActivity"></activity>
+        <activity android:name=".lesson2.chapter2.WarActivity" />
         <activity android:name=".lesson2.chapter3.SingletonEntryActivity">
+        </activity>
+        <activity android:name=".lesson3.DetailActivity">
+        </activity>
+        <activity android:name=".lesson4.DetailActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
