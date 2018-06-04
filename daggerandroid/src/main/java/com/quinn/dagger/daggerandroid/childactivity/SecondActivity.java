@@ -1,6 +1,9 @@
-package com.quinn.dagger.daggerandroid;
+package com.quinn.dagger.daggerandroid.childactivity;
 
 import android.os.Bundle;
+
+import com.quinn.dagger.daggerandroid.BaseActivity;
+import com.quinn.dagger.daggerandroid.R;
 
 public class SecondActivity extends BaseActivity {
 
