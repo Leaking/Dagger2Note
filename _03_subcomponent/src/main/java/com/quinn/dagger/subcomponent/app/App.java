@@ -22,10 +22,11 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        this.appComponent = DaggerAppComponent.create();
+        this.appComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).build();
         this.appComponent.inject(this);
         Log.i(TAG, "appBean " + appBean);
         Log.i(TAG, "commonBean " + commonBean);
+
     }
 
 

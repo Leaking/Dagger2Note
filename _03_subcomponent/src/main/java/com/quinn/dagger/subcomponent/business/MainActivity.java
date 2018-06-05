@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     AppBean appBean;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
