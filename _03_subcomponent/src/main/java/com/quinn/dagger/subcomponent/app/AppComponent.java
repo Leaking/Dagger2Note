@@ -1,7 +1,8 @@
 package com.quinn.dagger.subcomponent.app;
 
 
-import com.quinn.dagger.subcomponent.app.AppModule;
+import com.quinn.dagger.subcomponent.business.MainComponent;
+import com.quinn.dagger.subcomponent.business.MainModule;
 
 import dagger.Component;
 
@@ -10,6 +11,7 @@ public interface AppComponent {
 
     void inject(App app);
 
-    AppBean getAppBean();
+
+    MainComponent plus(MainModule mainModule);
 
 }

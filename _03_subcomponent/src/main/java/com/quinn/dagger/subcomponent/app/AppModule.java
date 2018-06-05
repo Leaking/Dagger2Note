@@ -1,5 +1,7 @@
 package com.quinn.dagger.subcomponent.app;
 
+import com.quinn.dagger.subcomponent.base.CommonBean;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -10,5 +12,13 @@ public class AppModule {
     public AppBean provideAppBean() {
         return new AppBean("appBean");
     }
+
+
+    @Provides
+    public CommonBean provideCommonBean() {
+        return new CommonBean("commonBean");
+    }
+
+
 
 }
