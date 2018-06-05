@@ -1,0 +1,5 @@
+
+dependency的使用
+
+1、主component需要暴露提供给外界的依赖（component中添加一个return某个数据类型的接口方法）
+2、子component中，component注解的dependencies参数添加主component
