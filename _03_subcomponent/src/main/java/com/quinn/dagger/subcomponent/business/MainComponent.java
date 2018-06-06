@@ -7,4 +7,10 @@ public interface MainComponent {
 
     void inject(MainActivity mainActivity);
 
+
+//    @Subcomponent.Builder
+//    interface Builder {
+//        MainComponent.Builder mainModule(MainModule mainModule);
+//        MainComponent build();
+//    }
 }

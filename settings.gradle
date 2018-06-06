@@ -1,1 +1,1 @@
-include ':app', ':_04_daggerandroid', ':_03_subcomponent', ':_02_dependency'
+include ':app', ':_04_daggerandroid', ':_03_subcomponent', ':_02_dependency', ':_01_basic'

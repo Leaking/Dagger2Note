@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ((App)getApplication()).getAppComponent().plus(new MainModule()).inject(this);
+//        ((App)getApplication()).getAppComponent().mainComponentBuilder().mainModule(new MainModule()).build().inject(this);
         Log.i(TAG, "appBean " + appBean);
         Log.i(TAG, "mainBean " + mainBean);
     }
